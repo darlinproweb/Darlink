@@ -1,0 +1,3 @@
+[build]
+  command = ""     # No necesitamos ningún comando de construcción
+  publish = "."    # Publicar el directorio actual (la raíz)
