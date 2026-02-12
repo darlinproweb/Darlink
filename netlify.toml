@@ -1,5 +1,5 @@
 [build]
-  command = "mkdir -p public && cp *.html *.css *.js public/ && cp -r img public/"
+  command = "mkdir -p public && cp *.html *.css *.js *.xml *.txt public/ && cp -r img public/"
   publish = "public"
 
 [build.environment]
