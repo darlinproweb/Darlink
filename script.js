@@ -323,5 +323,4 @@ function cerrarModal(modalId) {
 // INIT
 // ============================================
 
-console.log('WebIA - Página web de conversión cargada correctamente');
-console.log('¡Lista para convertir visitantes en clientes!');
+console.log('Darlink - Tu web en dias');
