@@ -7,7 +7,7 @@ Aquí tienes los pasos concretos para mejorar tu posición:
 ## 1. SEO Local (CRÍTICO para tu negocio)
 Google prioriza resultados locales. Tienes que decirle a Google que eres un negocio real en Santo Domingo.
 
-- **Google My Business (GMB):**
+- **   (GMB):**
   - **Acción:** Crea un perfil de negocio en Google. Es gratis.
   - **Clave:** Completa TODO: dirección (aunque sea de casa, puedes ocultarla si das servicio a domicilio/remoto), teléfono, horario, web.
   - **Categoría:** Usa "Diseñador de sitios web" o "Agencia de diseño web".
@@ -29,7 +29,7 @@ Google necesita texto para entender de qué trata tu web.
   - Estos artículos atraen tráfico que luego puedes convertir en clientes.
 
 ## 3. Link Building (Autoridad)
-Necesitas que otras webs "voten" por ti poniendo un enlace hacia `darlink.netlify.app` (idealmente compra tu propio dominio `.com` pronto, ver punto 5).
+Necesitas que otras webs "voten" por ti poniendo un enlace hacia `darlinkrd.netlify.app` (idealmente compra tu propio dominio `.com` pronto, ver punto 5).
 
 - **Estrategia:**
   - Intercambia enlaces con otros profesionales (fotógrafos, diseñadores gráficos, community managers) en RD.
@@ -44,7 +44,7 @@ Aunque los likes no posicionan directo, el tráfico sí ayuda.
 - Enlaza siempre a tu web en la bio.
 
 ## 5. Dominio Propio (IMPORTANTE)
-Actualmente usas `darlink.netlify.app`.
+Actualmente usas `darlinkrd.netlify.app`.
 - **Problema:** Los subdominios gratuitos posicionan peor que un dominio propio (`.com`, `.do`).
 - **Acción:** Compra `darlink.do` o `darlinkweb.com`. Cuesta ~$15 USD/año y da una imagen mucho más profesional y un gran empujón al SEO.
 
