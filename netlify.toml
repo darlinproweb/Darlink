@@ -1,6 +1,6 @@
 [build]
-  command = "echo 'Building static site...'"
-  publish = "."
+  command = "mkdir -p public && cp *.html *.css *.js public/"
+  publish = "public"
 
 [build.environment]
   NODE_VERSION = "20"
