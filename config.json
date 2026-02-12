@@ -1,0 +1,179 @@
+{
+  "configuracion": {
+    "negocio": {
+      "nombre": "WebIA",
+      "tagline": "Webs Rápidas & Económicas",
+      "descripcion": "Páginas web profesionales en 7 días, 50% más económicas gracias a IA"
+    },
+    "contacto": {
+      "whatsapp": "1234567890",
+      "email": "info@webia.com",
+      "telefono": "+1 (123) 456-7890",
+      "horario": "Lunes a Viernes 9am - 6pm"
+    },
+    "planes": {
+      "starter": {
+        "nombre": "Starter",
+        "precio": 50,
+        "secciones": 5,
+        "descripcion": "Perfecto para comenzar",
+        "caracteristicas": [
+          "Página web de 5 secciones",
+          "Diseño moderno y responsive",
+          "1 formulario de contacto",
+          "Integración con WhatsApp",
+          "1 año de hosting incluido",
+          "Dominio .com o .com.mx (1er año)",
+          "Soporte vía email 30 días"
+        ]
+      },
+      "profesional": {
+        "nombre": "Profesional",
+        "precio": 200,
+        "secciones": 10,
+        "descripcion": "La mejor opción",
+        "destacado": true,
+        "badge": "RECOMENDADO",
+        "caracteristicas": [
+          "Página web de 10 secciones",
+          "Diseño premium personalizado",
+          "Múltiples formularios",
+          "Integración WhatsApp + Teléfono",
+          "2 años de hosting incluidos",
+          "Dominio .com o .com.mx (2 años)",
+          "Sistema de galería/portafolio",
+          "Blog integrado",
+          "Soporte preferente 6 meses",
+          "Optimización SEO avanzada"
+        ]
+      },
+      "ecommerce": {
+        "nombre": "E-commerce",
+        "precio": 450,
+        "descripcion": "Para vender online",
+        "caracteristicas": [
+          "Todo del plan Profesional",
+          "Tienda online integrada",
+          "Hasta 50 productos",
+          "Carrito de compras seguro",
+          "Pasarela de pagos (Stripe/PayPal)",
+          "Gestión de inventario",
+          "Correos automáticos",
+          "Soporte prioritario 1 año"
+        ]
+      }
+    },
+    "tiempos_entrega": {
+      "informacion": "1-2 días",
+      "desarrollo": "3-5 días",
+      "revision": 1,
+      "total_horas": "7 días"
+    },
+    "colores": {
+      "primary": "#2563eb",
+      "primary_dark": "#1e40af",
+      "primary_light": "#3b82f6",
+      "secondary": "#10b981",
+      "accent": "#f59e0b",
+      "text_dark": "#1f2937",
+      "text_gray": "#6b7280",
+      "bg_white": "#ffffff",
+      "bg_light": "#f9fafb"
+    },
+    "tipografia": {
+      "titulos": "Playfair Display",
+      "cuerpo": "Inter"
+    },
+    "testimonios": [
+      {
+        "nombre": "Carlos M.",
+        "negocio": "Peluquería Estilo Premium",
+        "rating": 5,
+        "resultado": "+15 clientes nuevos/mes",
+        "texto": "Increíble. Tenía mi peluquería sin páginas web, solo Instagram. En 7 días tuve una página profesional. El primer mes recibí 15 clientes nuevos directamente desde Google."
+      },
+      {
+        "nombre": "Ana L.",
+        "negocio": "Clínica Dental Sonrisa Segura",
+        "rating": 5,
+        "resultado": "Gané $ el primer mes",
+        "texto": "Pagué $300 por la página profesional y gané $ el primer mes con clientes que me buscaron en Google."
+      },
+      {
+        "nombre": "Roberto T.",
+        "negocio": "Taller MecánicaPro",
+        "rating": 5,
+        "resultado": "No pierdo clientes en Google",
+        "texto": "Rápido, barato y funciona. Ya no pierdo clientes porque me buscan en Google y ven que soy profesional."
+      },
+      {
+        "nombre": "Gabriela R.",
+        "negocio": "Restaurante Casa Nostra",
+        "rating": 5,
+        "resultado": "Página hermosa y funcional",
+        "texto": "Mi expectativa era baja por el precio, pero la página quedó hermosa. Tengo las opciones para mostrar menú, hacer reservas y contactar."
+      },
+      {
+        "nombre": "Felipe G.",
+        "negocio": "Gimnasio FitZone",
+        "rating": 5,
+        "resultado": "Ventas 24/7",
+        "texto": "Esperaba que fuera complicado, pero fue súper directo. Nada de trámites raros. Ahora mis clientes se inscriben online."
+      },
+      {
+        "nombre": "Patricia M.",
+        "negocio": "Técnica Independiente - Diseño",
+        "rating": 5,
+        "resultado": "Posicionamiento en Google",
+        "texto": "Por fin un lugar donde confiar sin invertir una fortuna. Tengo mi portafolio online en una semana, aparezco en Google de mi ciudad."
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Cómo funciona la garantía de 7 días?",
+        "respuesta": "Es simple: contratas, proporcionas la información, nuestro equipo trabaja, y en 7 días tu página está en vivo. Si por algún motivo no cumplimos, devolvemos tu dinero completamente."
+      },
+      {
+        "pregunta": "¿Qué pasa si necesito cambios después?",
+        "respuesta": "Los primeros 30-180 días (según tu plan) incluyen soporte para cambios pequeños. Después, puedes solicitar cambios con un costo adicional."
+      },
+      {
+        "pregunta": "¿El dominio y hosting están incluidos?",
+        "respuesta": "Sí. Todos los planes incluyen dominio (.com o .com.mx) y hosting por 1-2 años según el plan. Después, pagarás un pequeño mantenimiento anual (~$20)."
+      },
+      {
+        "pregunta": "¿Mis clientes pueden ver mi página en Google?",
+        "respuesta": "Totalmente. Aplicamos SEO local profesional. Tu negocio aparecerá cuando alguien busca servicios como los tuyos en tu zona."
+      },
+      {
+        "pregunta": "¿Necesito conocimientos técnicos?",
+        "respuesta": "No. Nosotros nos encargamos de todo. Tú solo proporcionas información de tu negocio. Es tan simple como hablar por WhatsApp sobre qué quieres en tu web."
+      },
+      {
+        "pregunta": "¿Puedo cambiar de proveedor después?",
+        "respuesta": "Claro. Tu página es tuya. El dominio y hosting son tuyos. Cuando quieras, puedes migrar a otro proveedor."
+      }
+    ],
+    "seo": {
+      "titulo": "WebIA - Páginas Web en 7 Días | Desarrollo Web Económico con IA",
+      "descripcion": "Páginas web profesionales en 7 días. 50% más económicas. Diseño con IA. Ideal para negocios locales.",
+      "keywords": [
+        "página web rápida",
+        "desarrollo web económico",
+        "IA",
+        "agencia web",
+        "sitios web locales"
+      ]
+    },
+    "redes_sociales": {
+      "facebook": "https://facebook.com/webia",
+      "instagram": "https://instagram.com/webia",
+      "whatsapp": "https://wa.me/1234567890",
+      "linkedin": "https://linkedin.com/company/webia"
+    },
+    "analytics": {
+      "google_analytics_id": "G-XXXXXXXXXX",
+      "facebook_pixel_id": "XXXXXXXXXXX"
+    }
+  }
+}
