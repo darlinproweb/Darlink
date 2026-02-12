@@ -4,7 +4,7 @@
 
 // Cambiar estos valores a tu número de WhatsApp y correo
 const WHATSAPP_NUMBER = "18495245714"; // Formato: 521234567890 (para México)
-const BUSINESS_EMAIL = "darlinmendez91@gmail.com";
+const BUSINESS_EMAIL = "darlinkrd@gmail.com";
 const BUSINESS_PHONE = "+1 849-524-5714";
 
 // ============================================
