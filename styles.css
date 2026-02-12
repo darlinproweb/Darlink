@@ -140,29 +140,84 @@ body {
     background-color: var(--primary-dark);
 }
 
+/* Botón Toggle (Desktop: Oculto) */
+.navbar-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* ============================================
+   RESPONSIVE (TABLET & MOBILE)
+   ============================================ */
+
 @media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+        /* Mostrar botón toggle */
+        z-index: 102;
+        /* Por encima del menú si es necesario */
+    }
+
+    /* Menú desplegable */
     .nav-menu {
-        gap: 15px;
+        position: absolute;
+        top: 100%;
+        /* Justo debajo del header */
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 0;
+        box-shadow: var(--shadow-md);
+
+        /* Oculto por defecto (Slide Up) */
+        overflow: hidden;
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        z-index: 99;
+    }
+
+    /* Clase activa para mostrar el menú */
+    .nav-menu.active {
+        max-height: 400px;
+        /* Altura suficiente para el contenido */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        opacity: 1;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .nav-link {
-        font-size: 13px;
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        font-size: 16px;
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
     }
 
     .logo {
         font-size: 22px;
     }
-}
-
-@media (max-width: 640px) {
-    .nav-menu {
-        gap: 10px;
-        flex-wrap: wrap;
-    }
 
     .btn-primary-nav {
-        padding: 8px 12px;
-        font-size: 12px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
     }
 }
 

@@ -27,6 +27,50 @@ function scrollToProblema() {
 }
 
 // ============================================
+// MOBILE MENU TOGGLE
+// ============================================
+
+function toggleMenu() {
+    const navMenu = document.getElementById('navMenu');
+    const toggleBtn = document.querySelector('.navbar-toggle i');
+
+    // Toggle active class
+    navMenu.classList.toggle('active');
+
+    // Change icon (optional but nice)
+    if (navMenu.classList.contains('active')) {
+        toggleBtn.classList.remove('ri-menu-line');
+        toggleBtn.classList.add('ri-close-line');
+    } else {
+        toggleBtn.classList.remove('ri-close-line');
+        toggleBtn.classList.add('ri-menu-line');
+    }
+}
+
+// Close menu when clicking a link (Mobile)
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const navMenu = document.getElementById('navMenu');
+            const toggleBtn = document.querySelector('.navbar-toggle i');
+
+            // Check if menu is open
+            if (navMenu && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+
+                // Reset icon
+                if (toggleBtn) {
+                    toggleBtn.classList.remove('ri-close-line');
+                    toggleBtn.classList.add('ri-menu-line');
+                }
+            }
+        });
+    });
+});
+
+// ============================================
 // WHATSAPP INTEGRATION
 // ============================================
 
