@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Inicia tu proyecto web con Darlink. Formulario de inicio de proyecto para agencias y negocios locales.">
+    <title>Iniciar Proyecto | Darlink - Desarrollo Web Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="img/logo%20DL%20ico.png">
+
+    <!-- Fonts and Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <h1 class="logo">Darlink</h1>
+                    <p class="tagline">Webs Rápidas & Económicas</p>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Volver al Inicio</a>
+                <a href="index.html#planes" class="nav-link">Ver Planes</a>
+                <a href="index.html#contacto" class="nav-link btn-primary-nav">Contactar Soporte</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FORM HEADER SECTION -->
+    <section class="form-header">
+        <div class="container">
+            <h2 class="section-title">Inicia Tu Proyecto</h2>
+            <p class="section-subtitle">Completa este formulario para que podamos empezar a construir tu sitio web
+                ideal.</p>
+        </div>
+    </section>
+
+    <!-- MAIN FORM SECTION -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <form id="projectForm" class="pro-form" name="start-project" method="POST" data-netlify="true"
+                    enctype="multipart/form-data" onsubmit="handleFormSubmit(event)">
+                    <input type="hidden" name="form-name" value="start-project" />
+
+                    <!-- Sección 1: Información General -->
+                    <div class="form-group-section">
+                        <h3 class="form-section-title"><i class="ri-user-line"></i> Información General</h3>
+                        <div class="form-grid">
+                            <div class="form-control">
+                                <label for="businessName">Nombre del negocio <span class="required">*</span></label>
+                                <input type="text" id="businessName" name="businessName" required
+                                    placeholder="Ej: Barbería El Corte">
+                            </div>
+                            <div class="form-control">
+                                <label for="contactName">Nombre del contacto <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="contactName" required
+                                    placeholder="Ej: Juan Pérez">
+                            </div>
+                            <div class="form-control">
+                                <label for="phone">Teléfono <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Ej: +1 829 555 5555">
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Correo electrónico <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="nombre@ejemplo.com">
+                            </div>
+                            <div class="form-control full-width">
+                                <label for="address">Dirección física</label>
+                                <input type="text" id="address" name="address"
+                                    placeholder="Calle Principal #123, Ciudad">
+                            </div>
+                            <div class="form-control full-width">
+                                <label for="schedule">Horario de atención</label>
+                                <input type="text" id="schedule" name="schedule"
+                                    placeholder="Ej: Lunes a Viernes 9am - 6pm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sección 2: Sobre el Negocio -->
+                    <div class="form-group-section">
+                        <h3 class="form-section-title"><i class="ri-store-2-line"></i> Sobre el Negocio</h3>
+                        <div class="form-control full-width">
+                            <label for="description">Descripción del negocio</label>
+                            <textarea id="description" name="description" rows="4"
+                                placeholder="Describe brevemente a qué se dedica tu negocio..."></textarea>
+                        </div>
+                        <div class="form-control full-width">
+                            <label for="services">Lista de servicios</label>
+                            <textarea id="services" name="services" rows="4"
+                                placeholder="Ej: Corte de pelo, Afeitado, Tinte..."></textarea>
+                        </div>
+                        <div class="form-control full-width">
+                            <label for="differentiator">Diferenciador principal (¿Por qué te eligen?)</label>
+                            <textarea id="differentiator" name="differentiator" rows="3"
+                                placeholder="Ej: Atención personalizada, mejores precios, ambiente relajado..."></textarea>
+                        </div>
+                        <div class="form-control full-width">
+                            <label for="socialLinks">Enlaces redes sociales</label>
+                            <textarea id="socialLinks" name="socialLinks" rows="2"
+                                placeholder="Instagram: @usuario, Facebook: /usuario..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Sección 3: Contenido y Material -->
+                    <div class="form-group-section">
+                        <h3 class="form-section-title"><i class="ri-image-line"></i> Contenido y Material</h3>
+                        <div class="form-grid">
+                            <div class="form-control">
+                                <label for="logoUpload">Subida de logo</label>
+                                <input type="file" id="logoUpload" name="logoUpload" accept="image/*">
+                            </div>
+                            <div class="form-control">
+                                <label for="photosUpload">Subida de fotos (Múltiple)</label>
+                                <input type="file" id="photosUpload" name="photosUpload" multiple accept="image/*">
+                            </div>
+                            <div class="form-control">
+                                <label for="hasTexts">¿Tiene textos preparados?</label>
+                                <select id="hasTexts" name="hasTexts">
+                                    <option value="no">No, necesito ayuda</option>
+                                    <option value="si">Sí, ya los tengo</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <label for="colors">Colores preferidos</label>
+                                <input type="text" id="colors" name="colors"
+                                    placeholder="Ej: Azul y Blanco, o códigos Hex">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sección 4: Objetivo de la Página -->
+                    <div class="form-group-section">
+                        <h3 class="form-section-title"><i class="ri-focus-2-line"></i> Objetivo de la Página</h3>
+                        <div class="form-control full-width">
+                            <label>Objetivo principal</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="mainGoal" value="calls"> Recibir llamadas
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="mainGoal" value="whatsapp"> Recibir mensajes WhatsApp
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="mainGoal" value="forms"> Recibir formularios
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="mainGoal" value="info"> Mostrar información
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="mainGoal" value="other"> Otro
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-control full-width">
+                            <label for="desiredAction">Acción principal deseada (CTA)</label>
+                            <input type="text" id="desiredAction" name="desiredAction"
+                                placeholder="Ej: 'Agendar Cita', 'Llamar Ahora', 'Pedir Cotización'">
+                        </div>
+                    </div>
+
+                    <!-- Sección 5: Funcionalidades -->
+                    <div class="form-group-section">
+                        <h3 class="form-section-title"><i class="ri-tools-line"></i> Funcionalidades</h3>
+                        <div class="checkbox-group full-width">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="features" value="whatsapp_btn"> Botón WhatsApp
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="features" value="contact_form"> Formulario de contacto
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="features" value="google_map"> Mapa de Google
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="features" value="gallery"> Galería
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="features" value="testimonials"> Testimonios
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Sección 6: Dominio y Hosting -->
+                    <div class="form-group-section">
+                        <h3 class="form-section-title"><i class="ri-server-line"></i> Dominio y Hosting</h3>
+                        <div class="form-grid">
+                            <div class="form-control">
+                                <label>¿Tiene dominio?</label>
+                                <div class="radio-group horizontal">
+                                    <label class="radio-option">
+                                        <input type="radio" name="hasDomain" value="yes"> Sí
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="hasDomain" value="no" checked> No
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <label>¿Desea mantenimiento mensual?</label>
+                                <div class="radio-group horizontal">
+                                    <label class="radio-option">
+                                        <input type="radio" name="maintenance" value="yes"> Sí
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="maintenance" value="no"> No
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="maintenance" value="info"> Más información
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sección Final -->
+                    <div class="form-footer">
+                        <div class="form-control full-width checkbox-confirm">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="confirm" required>
+                                <strong>Confirmo que la información proporcionada es correcta y autorizo el inicio del
+                                    proyecto.</strong>
+                            </label>
+                        </div>
+
+                        <div id="formMessage" class="form-message"></div>
+
+                        <button type="submit" class="btn btn-cta btn-large btn-full">Enviar Información</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Darlink</h4>
+                    <p>Páginas web rápidas, económicas y que funcionan.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#planes">Planes</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>WhatsApp: <a href="https://wa.me/18495245714" target="_blank">1-849-524-5714</a></p>
+                    <p>Email: darlinmendez91@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Darlink. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Inline script for form handling specific to this page
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const messageDiv = document.getElementById('formMessage');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerText;
+
+            if (!form.checkValidity()) {
+                messageDiv.textContent = "Por favor completa los campos obligatorios.";
+                messageDiv.className = "form-message error";
+                messageDiv.style.display = 'block';
+                return;
+            }
+
+            // UI Feedback
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Enviando...";
+            messageDiv.style.display = 'none';
+
+            // Prepare FormData
+            const formData = new FormData(form);
+
+            fetch("/", {
+                method: "POST",
+                body: formData
+            })
+                .then(response => {
+                    if (response.ok) {
+                        messageDiv.textContent = "¡Información enviada con éxito! Nos pondremos en contacto contigo pronto.";
+                        messageDiv.className = "form-message success";
+                        form.reset();
+                        messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                })
+                .catch(error => {
+                    messageDiv.textContent = "Hubo un error al enviar el formulario. Por favor intenta de nuevo o contáctanos por WhatsApp.";
+                    messageDiv.className = "form-message error";
+                    messageDiv.style.display = 'block';
+                    console.error('Error:', error);
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = originalText;
+                });
+        }
+    </script>
+</body>
+
+</html>
