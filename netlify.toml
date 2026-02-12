@@ -1,3 +1,6 @@
 [build]
-  command = ""     # No necesitamos ningún comando de construcción
-  publish = "."    # Publicar el directorio actual (la raíz)
+  command = "echo 'Building static site...'"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
