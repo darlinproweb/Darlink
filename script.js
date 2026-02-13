@@ -367,4 +367,4 @@ function cerrarModal(modalId) {
 // INIT
 // ============================================
 
-console.log('Darlink - Tu web en dias');
+console.log('DarLink - Tu web en dias');

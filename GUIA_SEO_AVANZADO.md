@@ -1,4 +1,4 @@
-# Guía Avanzada de SEO para Darlink
+# Guía Avanzada de SEO para DarLink
 
 El SEO (Optimización para Motores de Búsqueda) es una carrera de fondo, no un sprint. Ya hemos configurado la base técnica (meta etiquetas, JSON-LD, sitemap), pero para posicionarte en los primeros lugares de Google en República Dominicana, necesitas una estrategia continua.
 
@@ -67,4 +67,4 @@ Usa el lenguaje de tus clientes.
 5. [ ] (Opcional a medio plazo) Escribir 1 artículo de blog al mes.
 
 ---
-*Esta guía está diseñada para posicionar a Darlink como la referencia en diseño web rápido y económico en República Dominicana.*
+*Esta guía está diseñada para posicionar a DarLink como la referencia en diseño web rápido y económico en República Dominicana.*
