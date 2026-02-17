@@ -1426,4 +1426,252 @@ section {
         flex-direction: column;
         gap: 12px;
     }
+}/* ============================================
+   DARK MODE
+   ============================================ */
+
+body.dark-mode {
+    --text-dark: #f8fafc;
+    --text-gray: #cbd5e1;
+    --bg-white: #0f172a;
+    /* Slate 900 */
+    --bg-light: #1e293b;
+    /* Slate 800 */
+    --bg-dark: #020617;
+    /* Slate 950 */
+    --border-color: #334155;
+    --border-light: #1e293b;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
+
+body.dark-mode .navbar {
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-mode .logo {
+    color: #f8fafc;
+}
+
+body.dark-mode .nav-link {
+    color: #f8fafc;
+}
+
+body.dark-mode .problem-card,
+body.dark-mode .plan-card,
+body.dark-mode .testimonio-card,
+body.dark-mode .faq-item {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .problem-icon {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .problema-highlight {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+body.dark-mode .phone-screen {
+    border: 4px solid #000;
+}
+
+body.dark-mode .screen-content {
+    background-color: #f8fafc;
+    /* Keep screen content light for contrast, or darken if needed */
+    color: #0f172a;
+}
+
+body.dark-mode .screen-header {
+    color: #0f172a;
+    background: #e2e8f0;
+}
+
+body.dark-mode .plan-featured {
+    border-color: var(--accent-color);
+}
+
+body.dark-mode .amount {
+    color: #f8fafc;
+}
+
+body.dark-mode .planes-note {
+    background-color: var(--bg-light);
+}
+
+body.dark-mode .comparison-table {
+    background-color: var(--bg-light);
+}
+
+body.dark-mode .comparison-table th,
+body.dark-mode .comparison-table td {
+    border-color: var(--border-color);
+}
+
+body.dark-mode .comparison-table .highlight {
+    background-color: rgba(14, 165, 233, 0.1);
+}
+
+body.dark-mode .ventaja-card:hover {
+    background-color: var(--bg-light);
+}
+
+body.dark-mode .faq-question:hover {
+    background-color: #334155;
+}
+
+body.dark-mode .footer {
+    background-color: #020617;
+    border-top: 1px solid var(--border-color);
+}
+
+body.dark-mode .footer-bottom {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-dark);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode-btn:hover {
+    background-color: var(--bg-light);
+    color: var(--accent-color);
+}
+
+
+/* ============================================
+   PORTAFOLIO / GALERÍA
+   ============================================ */
+
+.portafolio {
+    background-color: var(--bg-white);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.portfolio-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.portfolio-img-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.portfolio-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-img-container img {
+    transform: scale(1.05);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    opacity: 1;
+    /* Always visible for better UX, or 0 for hover only */
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+.portfolio-category {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--accent-color);
+    padding: 4px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+
+/* ============================================
+   TESTIMONIOS (Update Existing or New)
+   ============================================ */
+
+.testimonios {
+    background-color: var(--bg-light);
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonio-card {
+    background-color: var(--bg-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.testimonio-text {
+    font-style: italic;
+    color: var(--text-gray);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.testimonio-author {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.testimonio-name {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.testimonio-role {
+    font-size: 13px;
+    color: var(--accent-color);
+}.  
+ 

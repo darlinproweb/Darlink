@@ -335,14 +335,36 @@ document.querySelectorAll('.btn').forEach(btn => {
 // DARK MODE TOGGLE (OPCIONAL)
 // ============================================
 
+// ============================================
+// DARK MODE TOGGLE (OPCIONAL)
+// ============================================
+
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDark);
+
+    // Update Icon
+    updateDarkModeIcon(isDark);
+}
+
+function updateDarkModeIcon(isDark) {
+    const icon = document.querySelector('#darkModeToggle i');
+    if (icon) {
+        if (isDark) {
+            icon.classList.remove('ri-moon-line');
+            icon.classList.add('ri-sun-line');
+        } else {
+            icon.classList.remove('ri-sun-line');
+            icon.classList.add('ri-moon-line');
+        }
+    }
 }
 
 // Cargar preferencia de dark mode
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
+    updateDarkModeIcon(true);
 }
 
 // ============================================
