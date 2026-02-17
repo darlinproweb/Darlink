@@ -529,11 +529,12 @@
                     <p class="contacto-note">O llena el formulario abajo y te contactamos en 24 horas</p>
                 </div>
 
-                <form class="contacto-form" id="contactoForm">
-                    <input type="text" placeholder="Tu nombre" required>
-                    <input type="email" placeholder="Tu correo" required>
-                    <input type="tel" placeholder="Tu teléfono" required>
-                    <textarea placeholder="Cuéntanos sobre tu negocio..." rows="4" required></textarea>
+                <form class="contacto-form" id="contactoForm" name="contacto" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contacto">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo" required>
+                    <input type="tel" name="telefono" placeholder="Tu teléfono" required>
+                    <textarea name="mensaje" placeholder="Cuéntanos sobre tu negocio..." rows="4" required></textarea>
                     <button type="submit" class="btn btn-cta btn-full">Enviar Información</button>
                 </form>
 

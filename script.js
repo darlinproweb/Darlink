@@ -132,11 +132,14 @@ document.addEventListener('DOMContentLoaded', function () {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
 
+            // FormData para enviar a Netlify
+            const formData = new FormData(this);
+
             // Obtener valores del formulario
-            const nombre = this.querySelector('input[type="text"]').value;
-            const email = this.querySelector('input[type="email"]').value;
-            const telefono = this.querySelector('input[type="tel"]').value;
-            const mensaje = this.querySelector('textarea').value;
+            const nombre = formData.get('nombre');
+            const email = formData.get('email');
+            const telefono = formData.get('telefono');
+            const mensaje = formData.get('mensaje');
 
             // Crear mensaje de WhatsApp
             const textoWhatsApp = `
@@ -151,14 +154,24 @@ document.addEventListener('DOMContentLoaded', function () {
             const mensajeCodificado = encodeURIComponent(textoWhatsApp);
             const urlWhatsApp = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensajeCodificado}`;
 
-            // Mostrar confirmación (opcional)
-            alert('¡Gracias! Te redirigiremos a WhatsApp para confirmar tu mensaje.');
-
-            // Abrir WhatsApp
-            window.open(urlWhatsApp, '_blank');
-
-            // Limpiar formulario
-            this.reset();
+            // Enviar datos a Netlify (Email)
+            fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            })
+                .then(() => {
+                    // Éxito: Abrir WhatsApp y mostrar confirmación
+                    alert('¡Gracias! Hemos recibido tu mensaje. Te redirigiremos a WhatsApp para agilizar el contacto.');
+                    window.open(urlWhatsApp, '_blank');
+                    form.reset();
+                })
+                .catch((error) => {
+                    // Fallo (pero aún intentamos WhatsApp)
+                    console.error('Error al enviar formulario:', error);
+                    alert('Hubo un error al enviar el correo, pero te redirigiremos a WhatsApp.');
+                    window.open(urlWhatsApp, '_blank');
+                });
         });
     }
 });
