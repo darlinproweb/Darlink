@@ -986,7 +986,8 @@ section {
 }
 
 .faq-question::after {
-    content: "â–¼";
+    content: "\25BC";
+    /* Unicode for black down-pointing triangle */
     font-size: 12px;
     transition: var(--transition);
 }
