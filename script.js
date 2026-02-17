@@ -134,6 +134,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // FormData para enviar a Netlify
             const formData = new FormData(this);
+            const submitBtn = document.getElementById('submitBtn');
+
+            // Disable button and show loading text
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = 'Enviando...';
+            submitBtn.disabled = true;
 
             // Obtener valores del formulario
             const nombre = formData.get('nombre');
@@ -165,12 +171,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert('¡Gracias! Hemos recibido tu mensaje. Te redirigiremos a WhatsApp para agilizar el contacto.');
                     window.open(urlWhatsApp, '_blank');
                     form.reset();
+                    submitBtn.innerText = 'Enviado';
                 })
                 .catch((error) => {
                     // Fallo (pero aún intentamos WhatsApp)
                     console.error('Error al enviar formulario:', error);
                     alert('Hubo un error al enviar el correo, pero te redirigiremos a WhatsApp.');
                     window.open(urlWhatsApp, '_blank');
+                    submitBtn.innerText = originalText;
+                    submitBtn.disabled = false;
                 });
         });
     }

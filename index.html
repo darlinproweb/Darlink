@@ -529,13 +529,17 @@
                     <p class="contacto-note">O llena el formulario abajo y te contactamos en 24 horas</p>
                 </div>
 
-                <form class="contacto-form" id="contactoForm" name="contacto" method="POST" data-netlify="true">
+                <form class="contacto-form" id="contactoForm" name="contacto" method="POST" data-netlify="true"
+                    netlify-honeypot="bot-field">
                     <input type="hidden" name="form-name" value="contacto">
+                    <p class="hidden" style="display:none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <input type="text" name="nombre" placeholder="Tu nombre" required>
                     <input type="email" name="email" placeholder="Tu correo" required>
                     <input type="tel" name="telefono" placeholder="Tu teléfono" required>
                     <textarea name="mensaje" placeholder="Cuéntanos sobre tu negocio..." rows="4" required></textarea>
-                    <button type="submit" class="btn btn-cta btn-full">Enviar Información</button>
+                    <button type="submit" class="btn btn-cta btn-full" id="submitBtn">Enviar Información</button>
                 </form>
 
                 <p class="contacto-legal">Nos contactaremos en 24 horas. Sin spam. Sin sorpresas.</p>
