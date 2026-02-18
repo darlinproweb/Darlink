@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Crear mensaje de WhatsApp
             const textoWhatsApp = `
-*Nuevo contacto desde WebIA*
+*Nuevo contacto desde Darlink*
 
 *Nombre:* ${nombre}
 *Email:* ${email}
