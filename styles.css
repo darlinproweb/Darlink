@@ -1,19 +1,19 @@
-﻿/* ============================================
+/* ============================================
    VARIABLES Y COLORES
    ============================================ */
 
 :root {
-    /* Neutral & Professional Palette (Slate / Charcoal) */
-    --primary-color: #1e293b;
-    /* Slate 800 */
-    --primary-dark: #0f172a;
-    /* Slate 900 */
-    --primary-light: #334155;
-    /* Slate 700 */
+    /* NexoLink Palette */
+    --primary-color: #003366;
+    /* Azul Marino Corporativo */
+    --primary-dark: #001a33;
+    /* Darker Navy */
+    --primary-light: #004B88;
+    /* Lighter Navy */
     --secondary-color: #475569;
     /* Slate 600 */
-    --accent-color: #0ea5e9;
-    /* Sky 500 - Professional Blue Accent */
+    --accent-color: #00CCFF;
+    /* Cian Vibrante / Turquesa */
     --danger-color: #ef4444;
 
     --text-dark: #0f172a;
@@ -129,15 +129,17 @@ body {
 }
 
 .btn-primary-nav {
-    background-color: var(--primary-color);
-    color: var(--bg-white);
+    background-color: var(--accent-color);
+    color: var(--primary-dark);
+    font-weight: 600;
     padding: 10px 20px;
     border-radius: 6px;
     transition: var(--transition);
 }
 
 .btn-primary-nav:hover {
-    background-color: var(--primary-dark);
+    background-color: #00b8e6;
+    box-shadow: 0 4px 12px rgba(0, 204, 255, 0.4);
 }
 
 /* BotÃ³n Toggle (Desktop: Oculto) */
@@ -241,14 +243,15 @@ body {
 }
 
 .btn-cta {
-    background-color: var(--primary-color);
-    color: var(--bg-white);
+    background-color: var(--accent-color);
+    color: var(--primary-dark);
+    font-weight: 700;
 }
 
 .btn-cta:hover {
-    background-color: var(--primary-dark);
+    background-color: #00b8e6;
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 10px 20px rgba(0, 204, 255, 0.4);
 }
 
 .btn-secondary {
@@ -321,6 +324,17 @@ body {
 
 .hero-buttons .btn {
     font-size: 16px;
+}
+
+.hero .btn-secondary {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+.hero .btn-secondary:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-dark) !important;
+    box-shadow: 0 4px 12px rgba(0, 204, 255, 0.3);
 }
 
 .hero-stats {
