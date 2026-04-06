@@ -4,7 +4,7 @@
 
 // Cambiar estos valores a tu número de WhatsApp y correo
 const WHATSAPP_NUMBER = "18495245714"; // Formato: 521234567890 (para México)
-const BUSINESS_EMAIL = "darlinkrd@gmail.com";
+const BUSINESS_EMAIL = "nexolinkrd@gmail.com";
 const BUSINESS_PHONE = "+1 849-524-5714";
 
 // ============================================
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Crear mensaje de WhatsApp
             const textoWhatsApp = `
-*Nuevo contacto desde Darlink*
+*Nuevo contacto desde NexoLink*
 
 *Nombre:* ${nombre}
 *Email:* ${email}
@@ -377,4 +377,4 @@ function cerrarModal(modalId) {
 // INIT
 // ============================================
 
-console.log('DarLink - Tu web en dias');
+console.log('NexoLink - Tu web en dias');

@@ -1,4 +1,4 @@
-# Guía Avanzada de SEO para DarLink
+# Guía Avanzada de SEO para NexoLink
 
 El SEO (Optimización para Motores de Búsqueda) es una carrera de fondo, no un sprint. Ya hemos configurado la base técnica (meta etiquetas, JSON-LD, sitemap), pero para posicionarte en los primeros lugares de Google en República Dominicana, necesitas una estrategia continua.
 
@@ -29,7 +29,7 @@ Google necesita texto para entender de qué trata tu web.
   - Estos artículos atraen tráfico que luego puedes convertir en clientes.
 
 ## 3. Link Building (Autoridad)
-Necesitas que otras webs "voten" por ti poniendo un enlace hacia `darlinkrd.netlify.app` (idealmente compra tu propio dominio `.com` pronto, ver punto 5).
+Necesitas que otras webs "voten" por ti poniendo un enlace hacia `nexolinkrd.netlify.app` (idealmente compra tu propio dominio `.com` pronto, ver punto 5).
 
 - **Estrategia:**
   - Intercambia enlaces con otros profesionales (fotógrafos, diseñadores gráficos, community managers) en RD.
@@ -44,9 +44,9 @@ Aunque los likes no posicionan directo, el tráfico sí ayuda.
 - Enlaza siempre a tu web en la bio.
 
 ## 5. Dominio Propio (IMPORTANTE)
-Actualmente usas `darlinkrd.netlify.app`.
+Actualmente usas `nexolinkrd.netlify.app`.
 - **Problema:** Los subdominios gratuitos posicionan peor que un dominio propio (`.com`, `.do`).
-- **Acción:** Compra `darlink.do` o `darlinkweb.com`. Cuesta ~$15 USD/año y da una imagen mucho más profesional y un gran empujón al SEO.
+- **Acción:** Compra `nexolink.do` o `nexolinkweb.com`. Cuesta ~$15 USD/año y da una imagen mucho más profesional y un gran empujón al SEO.
 
 ## 6. Experiencia de Usuario (UX) y Velocidad
 Google mide si la gente se queda o se va rápido (rebote).
@@ -67,4 +67,4 @@ Usa el lenguaje de tus clientes.
 5. [ ] (Opcional a medio plazo) Escribir 1 artículo de blog al mes.
 
 ---
-*Esta guía está diseñada para posicionar a DarLink como la referencia en diseño web rápido y económico en República Dominicana.*
+*Esta guía está diseñada para posicionar a NexoLink como la referencia en diseño web rápido y económico en República Dominicana.*
